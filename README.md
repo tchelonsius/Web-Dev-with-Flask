@@ -1,4 +1,4 @@
-# Library on the web
+# 📚 Library on the web
 This web application covers the most important
 usages of flask related modules. The idea was to create 
 an interactive panel that displays a list of books,
