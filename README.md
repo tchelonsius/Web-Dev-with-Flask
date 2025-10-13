@@ -16,7 +16,7 @@ Users can:
 
 The flask application interacts with a SQLite DB, where the books
 are stored, via SQLAlchemy. The forms used for the 'add' and 'edit'
-options are validated by WTForms.
+options are validated by WTForms. The styling was created using Bootstrap.
 
 ---
 
@@ -29,6 +29,8 @@ SQLAlchemy — ORM for database operations
 WTForms — form handling and validation
 
 SQLite — lightweight database
+
+Bootstrap — Customization and Styling 
 
 ---
 
