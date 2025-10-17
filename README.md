@@ -1,12 +1,8 @@
 # 📚 Library on the web
 
-This web application covers the most important
-usages of flask related modules. The idea was to create 
-an interactive panel that stores a user's list of books,
-that displays the title, author and rating of each book. The users need to
-authenticate themselves to access the application and see 
-their books through a registration and login system.
-One cannot see or edit other users' books.
+This web application demonstrates key concepts of Flask and its related modules.
+It provides an interactive interface where each authenticated user can manage their own book collection — including adding, editing, and deleting books with their respective title, author, and rating.
+Users must register and log in to access the application, and each user's data is isolated, ensuring that no one can view or modify another user's books.
 ---
 ![](library_v2.gif)
 ---
