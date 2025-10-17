@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<form action="" method="POST">
+    <div class="w-25 container-sm text-center pb-3 mt-5 pt-5">
+        <h1>Registration</h1>
+    </div>
+    <div class="w-25 container-sm align-center pb-3">
+        {{ form.csrf_token }}
+        {{ form.name.label }} {{ form.name(class="form-control") }}
+    </div>
+    <div class="w-25 container-sm align-center pb-3">
+        {{ form.email.label }} {{ form.email(class="form-control") }}
+    </div>
+    <div class="w-25 container-sm align-center">
+        {{ form.password.label }} {{ form.password(class="form-control") }}
+    </div>
+    <div class="w-25 container-sm text-center">
+    {% with message = get_flashed_messages() %}
+    {% if message %}
+        <p style="color:red">{{ message[0] }}</p>
+    {% endif %}
+    {% endwith %}
+    </div>
+    <div class="d-flex pt-4 justify-content-center form-group">
+        <button type="submit" value="Register" class="btn btn-warning">Register</button>
+    </div>
+</form>
+{% endblock %}

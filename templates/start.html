@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Start{% endblock %}
+{% block content %}
+<div class="position-absolute top-0 start-50 translate-middle-x mt-5 pt-5 w-25 text-center">
+  <h1>Flask Authentication</h1>
+  <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+  <a href="{{ url_for('register') }}" class="btn btn-secondary">Register</a>
+</div>
+{% endblock %}
